@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="AntLearning" default="create" basedir=".">
+<target name="compile">
+<javac srcdir="src/" destdir="staging" includes="src/test/java/com/nagarro/AdvanceJava/AppTest.java" includeantruntime="false" />
+</target>
+
+<target name="run" depends="compile">
+		<java classname="src/main/java/com/nagarro/AdvanceJava/App.java" fork="true">
+		
+		</java>
+	</target>
+	
+
+</project>
